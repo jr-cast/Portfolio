@@ -213,7 +213,7 @@ button {
   }
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 485px) {
   footer {
     height: 35vh;
     display: flex;
