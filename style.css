@@ -1,7 +1,7 @@
 
 /* NAVBAR */
 html {
-  font-family: inter;
+  font-family: 'Inter', sans-serif;
 }
 
 nav {
@@ -23,7 +23,7 @@ li {
 
 span {
   font-weight: bolder;
-  color: #42526E;
+  color: #42526e;
 }
 
 a {
@@ -44,18 +44,19 @@ hgroup {
 }
 
 h1 {
-  color: #172B4D;
+  color: #172b4d;
   display: flex;
   justify-content: center;
 }
 
 h2 {
-  color: #00AB84;
+  color: #00ab84;
   display: flex;
   justify-content: center;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: 48px;
   margin: 0;
   padding: 0;
@@ -72,12 +73,8 @@ h1, h2 {
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-  mar
-  n: 0;
-  c
-  or: #42526E;
-  display
-  flex;
+  color: #172b4d;
+  display: flex;
 }
 
 section {
@@ -97,16 +94,16 @@ section {
   text-align: center;
 }
 
- body {
+body {
   font-family: 'Inter', sans-serif;
   background-image: url(/static/Header-llustration-desktop@2x.png);
   background-size: cover;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   background-repeat: no-repeat;
 }
 
 #drop {
-  padding-top:  50px;
+  padding-top: 50px;
 }
 
 .social {
@@ -127,12 +124,13 @@ footer {
 
 /* MEDIA QUERIES */
 @media all and (max-width: 800px) {
-  h1, h2 {
+  h1,
+  h2 {
     font-size: 36px;
     margin: 0;
     padding: 0;
     font-style: normal;
-    font-weight: 700 bold;
+    font-weight: 700;
     line-height: 52px;
     letter-spacing: 0.37px;
   }
@@ -146,9 +144,9 @@ footer {
     text-align: center;
     margin: 0;
     margin-bottom: 15px;
-    color: #42526E;
+    color: #42526e;
     display: flex;
-  }    
+  }
 }
 
 @media all and (max-width: 400px) {
@@ -156,21 +154,42 @@ footer {
     min-width: 360px;
     height: 130px;
     display: flex;
-  }  
+  }
+
   .burguerMenu > * {
-    color: #172B4D;
+    color: #172b4d;
     margin: 0;
     flex: 1;
-  }  
+  }
+
   .burguerMenu > div {
     flex: 2;
-  }  
+  }
+
   .burguerMenu > span {
     flex: 2;
     font-size: 20px;
     line-height: 28px;
-    font-weight: 600 bold;
+    font-weight: 600;
   }
+}
+
+#port:hover {
+  font-size: large;
+  font-weight: bolder;
+  color: #00ab84;
+}
+
+#about:hover {
+  font-size: large;
+  font-weight: bolder;
+  color: #00ab84;
+}
+
+#contact:hover {
+  font-size: large;
+  font-weight: bolder;
+  color: #00ab84;
 }
 
 @media all and (max-width: 399px) {
@@ -193,7 +212,7 @@ footer {
     font-family: 'Inter', sans-serif;
     background-image: url(/static/Header-llustration-desktop@2x.png);
     background-size: 150%;
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
     background-repeat: repeat;
   }
 }
