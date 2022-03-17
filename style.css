@@ -96,14 +96,10 @@ section {
 
 body {
   font-family: 'Inter', sans-serif;
-  background-image: url(/static/Header-llustration-desktop@2x.png);
+  background-image: url(Header-llustration-desktop@2x.png);
   background-size: cover;
-  background-color: #e5e5e5;
+  background-color: white;
   background-repeat: no-repeat;
-}
-
-#drop {
-  padding-top: 50px;
 }
 
 .social {
@@ -120,6 +116,18 @@ footer {
   height: 35vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+button {
+  margin-top: 30px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* MEDIA QUERIES */
@@ -143,8 +151,9 @@ footer {
     line-height: 28px;
     text-align: center;
     margin: 0;
+    margin-top: 30px;
     margin-bottom: 15px;
-    color: #42526e;
+    color: #172b4d;
     display: flex;
   }
 }
@@ -154,6 +163,7 @@ footer {
     min-width: 360px;
     height: 130px;
     display: flex;
+    align-items: center;
   }
 
   .burguerMenu > * {
@@ -196,6 +206,11 @@ footer {
   nav {
     display: none;
   }
+
+  hgroup {
+    width: 327px;
+    height: 192px;
+  }
 }
 
 @media all and (max-width: 400px) {
@@ -205,14 +220,26 @@ footer {
     flex-direction: column;
     justify-content: center;
   }
+
+  h1,
+  h2 {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0.37px;
+  }
 }
 
 @media all and (max-width: 1100px) {
   body {
     font-family: 'Inter', sans-serif;
-    background-image: url(/static/Header-llustration-desktop@2x.png);
-    background-size: 150%;
-    background-color: #e5e5e5;
+    background-image: url(Header-llustration-desktop@2x.png);
+    background-size: 200%;
+    background-color: white;
     background-repeat: repeat;
+    background-position: center;
   }
 }
