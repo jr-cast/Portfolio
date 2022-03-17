@@ -151,7 +151,6 @@ button {
     line-height: 28px;
     text-align: center;
     margin: 0;
-    margin-top: 30px;
     margin-bottom: 15px;
     color: #172b4d;
     display: flex;
@@ -219,6 +218,8 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0;
+    margin: 0;
   }
 
   h1,
@@ -231,6 +232,17 @@ button {
     line-height: 52px;
     letter-spacing: 0.37px;
   }
+
+  footer ul {
+    padding-top: 70px;
+    padding-bottom: 0;
+    margin-top: 0;
+  }
+
+  .burguerMenu {
+    padding-bottom: 40px;
+  }
+
 }
 
 @media all and (max-width: 1100px) {
