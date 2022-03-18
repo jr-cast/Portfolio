@@ -147,7 +147,6 @@ footer button {
   display: grid;
   grid-gap: 24px 24px;
   grid-template-columns: 375px;
-  /* border: 2px solid red; */
   justify-items: center;
 }
 
@@ -157,18 +156,19 @@ footer button {
 
 .card1 .img {
   width: 327px;
-  height:478px;
-  border: 1px solid #D0D9D4;
-  background-color: #EBF0EE;
+  height: 478px;
+  border: 1px solid #d0d9d4;
+  background-color: #ebf0ee;
   display: flex;
-  /* align-items: flex-end; */
   border-radius: 8px;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .img .cardFooter {
   width: 327px;
   height: 222px;
-  background-color: #FFFFFF;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -183,18 +183,18 @@ footer button {
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 16px;
-  font-family: inter;
+  font-family: inter, sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
   text-align: center;
-  color: #3A4A42;
+  color: #3a4a42;
 }
 
 .img .cardFooter .tags {
   width: 300px;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: space-between;
   padding-left: 8px;
   padding-right: 8px;
@@ -205,7 +205,7 @@ footer button {
   font-size: 12px;
   font-weight: 600;
   border-radius: 4px;
-  background-color: #EBF0EE;
+  background-color: #ebf0ee;
 }
 
 .cardBtn {
@@ -217,8 +217,8 @@ footer button {
   line-height: 24px;
   letter-spacing: 3%;
   text-align: center;
-  background-color: #36B37F;
-  color: #FFFFFF;
+  background-color: #36b37f;
+  color: #fff;
   border-style: none;
   margin-bottom: 24px;
 }
@@ -228,7 +228,7 @@ footer button {
 }
 
 .cardBtn:hover {
-  box-shadow: 0px 15px 20px rgb(54, 179, 127, 0.3);;
+  box-shadow: 0 15px 20px rgb(54, 179, 127, 0.3);
 }
 
 #getMyResume {
@@ -240,13 +240,13 @@ footer button {
   line-height: 24px;
   letter-spacing: 3%;
   text-align: center;
-  background-color: #36B37F;
-  color: #FFFFFF;
+  background-color: #36b37f;
+  color: #fff;
   border-style: none;
 }
 
 #getMyResume:hover {
-  box-shadow: 0px 15px 20px rgb(54, 179, 127, 0.3);;
+  box-shadow: 0 15px 20px rgb(54, 179, 127, 0.3);
 }
 
 #getMyResume:active {
@@ -254,14 +254,8 @@ footer button {
 }
 
 #aboutMe {
-  /* background-image: url(illustration-aboutme-mobile.png);
-  background-size: 100%;
-  background-color: white;
-  background-repeat: repeat;
-  background-position: center; */
   width: 351px;
   height: 333px;
-  /* border: 2px solid black; */
   margin-top: 44px;
   margin-bottom: 59px;
   display: flex;
@@ -283,15 +277,15 @@ footer button {
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
-  color: #42526E;
+  color: #42526e;
   text-align: center;
 }
 
-.img {
+/* div .img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
 
 #img1 {
   width: 300px;
@@ -307,6 +301,24 @@ footer button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#port:hover {
+  font-size: large;
+  font-weight: bolder;
+  color: #00ab84;
+}
+
+#about:hover {
+  font-size: large;
+  font-weight: bolder;
+  color: #00ab84;
+}
+
+#contact:hover {
+  font-size: large;
+  font-weight: bolder;
+  color: #00ab84;
 }
 
 /* MEDIA QUERIES */
@@ -361,24 +373,6 @@ footer button {
     line-height: 28px;
     font-weight: 600;
   }
-}
-
-#port:hover {
-  font-size: large;
-  font-weight: bolder;
-  color: #00ab84;
-}
-
-#about:hover {
-  font-size: large;
-  font-weight: bolder;
-  color: #00ab84;
-}
-
-#contact:hover {
-  font-size: large;
-  font-weight: bolder;
-  color: #00ab84;
 }
 
 @media all and (max-width: 399px) {
