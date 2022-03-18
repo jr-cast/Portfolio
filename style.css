@@ -90,7 +90,6 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 98vh;
   text-align: center;
 }
 
@@ -119,7 +118,7 @@ footer {
   align-items: center;
 }
 
-button {
+footer button {
   margin-top: 30px;
   border-radius: 50%;
   width: 40px;
@@ -128,6 +127,318 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#works {
+  color: #172b4d;
+  width: 327px;
+  height: 97px;
+  padding-top: 3800px;
+  padding-bottom: 36px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin-top: 90px;
+}
+
+.cardContainer {
+  margin-top: 62px;
+  display: grid;
+  grid-gap: 24px 24px;
+  grid-template-columns: 375px;
+  justify-items: center;
+}
+
+.card2 {
+  width: 377px;
+}
+
+.card3 {
+  height: 352px;
+}
+
+.card1 .img {
+  width: 327px;
+  height: 478px;
+  border: 1px solid #d0d9d4;
+  background-color: #ebf0ee;
+  display: flex;
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.img .cardFooter {
+  width: 327px;
+  height: 222px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  flex-direction: column;
+}
+
+.footerTitle h3 {
+  width: 295px;
+  height: 57px;
+  margin: 0;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
+  font-family: inter, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #3a4a42;
+}
+
+.skillFooter .tags {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 72px;
+}
+
+.skillFooter2 .tags {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 72px;
+  flex-wrap: wrap;
+}
+
+.skillFooter2 .tags li {
+  padding: 12px;
+  font-size: 12px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #36b37e;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.img .cardFooter .tags {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.skillFooter .tags li {
+  padding: 12px;
+  font-size: 12px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #36b37e;
+  margin-left: 4px;
+  margin-right: 4px;
+  font-weight: 600;
+}
+
+.img .cardFooter .tags li {
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 4px;
+  background-color: #ebf0ee;
+}
+
+.cardBtn {
+  border-radius: 4px;
+  width: 122px;
+  height: 48px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 3%;
+  text-align: center;
+  background-color: #36b37f;
+  color: #fff;
+  border-style: none;
+  margin-bottom: 24px;
+}
+
+.cardBtn:active {
+  background-color: #008552;
+}
+
+.cardBtn:hover {
+  box-shadow: 0 15px 20px rgb(54, 179, 127, 0.3);
+}
+
+#getMyResume {
+  border-radius: 4px;
+  width: 159px;
+  height: 48px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 3%;
+  text-align: center;
+  background-color: #36b37f;
+  color: #fff;
+  border-style: none;
+}
+
+#getMyResume:hover {
+  box-shadow: 0 15px 20px rgb(54, 179, 127, 0.3);
+}
+
+#getMyResume:active {
+  background-color: #008552;
+}
+
+#aboutMe {
+  height: 353px;
+  margin-top: 44px;
+  margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 375px;
+  background-image: url(illustration-aboutme-mobile.png);
+  background-position: center;
+  background-position-y: bottom;
+}
+
+#aboutMe h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #172b4d;
+  display: flex;
+  justify-content: center;
+  line-height: 52px;
+  text-align: center;
+}
+
+#aboutMe p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+  text-align: center;
+  margin-top: 0;
+}
+
+.img1 {
+  width: 300px;
+  height: auto;
+  align-self: center;
+  padding: 35px;
+  border-radius: 3em;
+}
+
+#port:hover {
+  font-size: large;
+  font-weight: bolder;
+  color: #00ab84;
+}
+
+#about:hover {
+  font-size: large;
+  font-weight: bolder;
+  color: #00ab84;
+}
+
+#contact:hover {
+  font-size: large;
+  font-weight: bolder;
+  color: #00ab84;
+}
+
+#AboutAndIllu {
+  width: 375px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#AboutAndIllu h2 {
+  padding-top: 25px;
+  margin-right: 20px;
+}
+
+.skills {
+  width: 327px;
+  height: 352px;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.skills .circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: 50px;
+  background-color: #fff;
+}
+
+.circle .imgSkill {
+  width: 60px;
+  height: auto;
+  margin-top: 14px;
+  margin-left: 2px;
+}
+
+.card1 .skills {
+  width: 327px;
+  height: 352px;
+  border: 1px solid #d0d9d4;
+  background-color: #ebf0ee;
+  display: flex;
+  border-radius: 8px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skillFooter {
+  width: inherit;
+  height: 176px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skillFooter h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+}
+
+.skillFooter2 {
+  width: inherit;
+  height: 176px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skillFooter2 h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
 }
 
 /* MEDIA QUERIES */
@@ -154,6 +465,7 @@ button {
     margin-bottom: 15px;
     color: #172b4d;
     display: flex;
+    padding-top: 30px;
   }
 }
 
@@ -163,6 +475,7 @@ button {
     height: 130px;
     display: flex;
     align-items: center;
+    padding-top: 12px;
   }
 
   .burguerMenu > * {
@@ -181,24 +494,6 @@ button {
     line-height: 28px;
     font-weight: 600;
   }
-}
-
-#port:hover {
-  font-size: large;
-  font-weight: bolder;
-  color: #00ab84;
-}
-
-#about:hover {
-  font-size: large;
-  font-weight: bolder;
-  color: #00ab84;
-}
-
-#contact:hover {
-  font-size: large;
-  font-weight: bolder;
-  color: #00ab84;
 }
 
 @media all and (max-width: 399px) {
@@ -250,7 +545,7 @@ button {
     background-image: url(Header-llustration-desktop@2x.png);
     background-size: 200%;
     background-color: white;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-position: center;
   }
 }

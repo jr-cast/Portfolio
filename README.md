@@ -1,10 +1,13 @@
-# Portfolio: Setup and mobile version skeleton💼!
+# Portfolio: Mobile version 📲!
 
-In this project we choose a template for start building our own professional portfolio.
+In this project we create the mobile website section where you we will list out future portfolio projects.
 
-We continue to practice the GitHub flow methodology, implementing linters and creating successful pull requests.
+Main objetives of this new project-feature is:
+* Understand how to parse a Figma design to create a UI.
+* Use Flexbox to place elements in the page.
+* Use CSS Grid to place elements in the page.
+* Build a personal portfolio site.
 
-To sum up, we go over the basic structure of a professional portfolio, implementing a simple layout based on existing samples and addressed the responsiveness of two basic sections of the HTML document.
 
 ## Built With
 * HTML
@@ -18,8 +21,8 @@ To sum up, we go over the basic structure of a professional portfolio, implement
 * Create a new branch according to the GitHub flow rules.
 * Add a .gitignore file.
 * Set up a linter for HTML and CSS and make sure that any files that are not relevant are ignored by git.
-* Choose a portfolio template from figma website
-* Build the first 2 sections of the mobile website using the selected template
+* Continue working with the previously selected template from figma website
+* Build the **works** section and the **about me** section of the mobile website 
 * Add descriptive README file to your project
 
 ### Install
