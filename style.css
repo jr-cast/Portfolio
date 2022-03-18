@@ -133,7 +133,7 @@ footer button {
   color: #172b4d;
   width: 327px;
   height: 97px;
-  padding-top: 2500px;
+  padding-top: 3800px;
   padding-bottom: 36px;
   font-weight: 700;
   font-size: 40px;
@@ -150,8 +150,12 @@ footer button {
   justify-items: center;
 }
 
-.card1 {
-  width: 329px;
+.card2 {
+  width: 377px;
+}
+
+.card3 {
+  height: 352px;
 }
 
 .card1 .img {
@@ -176,7 +180,7 @@ footer button {
   flex-direction: column;
 }
 
-.img .cardFooter p {
+.footerTitle h3 {
   width: 295px;
   height: 57px;
   margin: 0;
@@ -191,6 +195,37 @@ footer button {
   color: #3a4a42;
 }
 
+.skillFooter .tags {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 72px;
+}
+
+.skillFooter2 .tags {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 72px;
+  flex-wrap: wrap;
+}
+
+.skillFooter2 .tags li {
+  padding: 12px;
+  font-size: 12px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #36b37e;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
 .img .cardFooter .tags {
   width: 300px;
   display: flex;
@@ -198,6 +233,17 @@ footer button {
   justify-content: space-between;
   padding-left: 8px;
   padding-right: 8px;
+}
+
+.skillFooter .tags li {
+  padding: 12px;
+  font-size: 12px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #36b37e;
+  margin-left: 4px;
+  margin-right: 4px;
+  font-weight: 600;
 }
 
 .img .cardFooter .tags li {
@@ -254,13 +300,16 @@ footer button {
 }
 
 #aboutMe {
-  width: 351px;
-  height: 333px;
+  height: 353px;
   margin-top: 44px;
-  margin-bottom: 59px;
+  margin-bottom: 35px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  width: 375px;
+  background-image: url(illustration-aboutme-mobile.png);
+  background-position: center;
+  background-position-y: bottom;
 }
 
 #aboutMe h2 {
@@ -279,13 +328,8 @@ footer button {
   line-height: 32px;
   color: #42526e;
   text-align: center;
+  margin-top: 0;
 }
-
-/* div .img {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
 
 .img1 {
   width: 300px;
@@ -293,14 +337,6 @@ footer button {
   align-self: center;
   padding: 35px;
   border-radius: 3em;
-}
-
-#background2 {
-  width: 375px;
-  background-image: url(illustration-aboutme-mobile.png);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #port:hover {
@@ -319,6 +355,90 @@ footer button {
   font-size: large;
   font-weight: bolder;
   color: #00ab84;
+}
+
+#AboutAndIllu {
+  width: 375px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#AboutAndIllu h2 {
+  padding-top: 25px;
+  margin-right: 20px;
+}
+
+.skills {
+  width: 327px;
+  height: 352px;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.skills .circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: 50px;
+  background-color: #fff;
+}
+
+.circle .imgSkill {
+  width: 60px;
+  height: auto;
+  margin-top: 14px;
+  margin-left: 2px;
+}
+
+.card1 .skills {
+  width: 327px;
+  height: 352px;
+  border: 1px solid #d0d9d4;
+  background-color: #ebf0ee;
+  display: flex;
+  border-radius: 8px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skillFooter {
+  width: inherit;
+  height: 176px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skillFooter h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+}
+
+.skillFooter2 {
+  width: inherit;
+  height: 176px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skillFooter2 h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
 }
 
 /* MEDIA QUERIES */
@@ -355,6 +475,7 @@ footer button {
     height: 130px;
     display: flex;
     align-items: center;
+    padding-top: 12px;
   }
 
   .burguerMenu > * {
