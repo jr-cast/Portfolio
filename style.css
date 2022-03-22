@@ -93,14 +93,6 @@ section {
   justify-content: center;
 }
 
-/* #wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-} */
-
 body main {
   font-family: 'Inter', sans-serif;
   background-image: url(Header-llustration-desktop@2x.png);
@@ -456,6 +448,25 @@ body main {
   align-items: center;
 }
 
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contactForm h3 {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  text-align: center;
+}
+
 /* MEDIA QUERIES */
 @media all and (max-width: 800px) {
   h1,
@@ -501,7 +512,7 @@ body main {
 
   .burguerMenu > div {
     flex: 2;
-  }
+  }700
 
   .burguerMenu > span {
     flex: 2;
