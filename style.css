@@ -452,9 +452,12 @@ body main {
 #contactForm {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid red; */
   align-items: center;
   margin-top: 1.5em;
+  background: url(static/textArea_BG.svg);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  padding: 0;
 }
 
 #contactForm button {
@@ -476,11 +479,17 @@ textarea {
   font-family: 'Inter', sans-serif;
   border: 1px solid #D0D9D4;
   border-radius: 0.3em;
-
+  font-size: 1em;
 }
 
-form input:active {
+form input:focus, form textarea {
   border: 2px solid #60C095;
+}
+
+form textarea {
+  background: url(static/textAreaIcon.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 #contactForm h3 {
@@ -491,6 +500,14 @@ form input:active {
   color: #172B4D;
   padding-left: 0.5em;
   padding-right: 0.5em;
+}
+
+#formEmail {
+  color: #42526E;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  padding-bottom: 150px;
 }
 
 /* MEDIA QUERIES */
@@ -538,7 +555,7 @@ form input:active {
 
   .burguerMenu > div {
     flex: 2;
-  }700
+  }
 
   .burguerMenu > span {
     flex: 2;
