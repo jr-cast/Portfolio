@@ -149,7 +149,6 @@ body main {
   grid-gap: 24px 24px;
   grid-template-columns: 375px;
   justify-items: center;
-  /* border: 1px solid red; */
 }
 
 .card2 {
@@ -482,7 +481,7 @@ textarea {
   font-size: 1em;
 }
 
-form input:focus, form textarea {
+form input:focus, form textarea:focus {
   border: 2px solid #60C095;
 }
 
