@@ -149,6 +149,7 @@ body main {
   grid-gap: 24px 24px;
   grid-template-columns: 375px;
   justify-items: center;
+  /* border: 1px solid red; */
 }
 
 .card2 {
@@ -451,13 +452,35 @@ body main {
 #contactForm {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   align-items: center;
+  margin-top: 1.5em;
+}
+
+#contactForm button {
+  margin-top: 0.7em;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  gap: 1.5em;
+  align-items: center;
+}
+
+form input,
+textarea {
+  width: calc(100% - 4em);
+  padding: 1em;
+  font-family: 'Inter', sans-serif;
+  border: 1px solid #D0D9D4;
+  border-radius: 0.3em;
+
+}
+
+form input:active {
+  border: 2px solid #60C095;
 }
 
 #contactForm h3 {
@@ -465,6 +488,9 @@ form {
   line-height: 52px;
   font-weight: 700;
   text-align: center;
+  color: #172B4D;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 /* MEDIA QUERIES */
