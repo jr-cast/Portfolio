@@ -134,7 +134,6 @@ body main {
   color: #172b4d;
   width: 327px;
   height: 97px;
-  /* padding-top: 3800px; */
   padding-bottom: 36px;
   font-weight: 700;
   font-size: 40px;
@@ -476,13 +475,9 @@ textarea {
   width: calc(100% - 4em);
   padding: 1em;
   font-family: 'Inter', sans-serif;
-  border: 1px solid #D0D9D4;
+  border: 1px solid #d0d9d4;
   border-radius: 0.3em;
   font-size: 1em;
-}
-
-form input:focus, form textarea:focus {
-  border: 2px solid #60C095;
 }
 
 form textarea {
@@ -491,18 +486,23 @@ form textarea {
   background-position: bottom right;
 }
 
+form input:focus,
+form textarea:focus {
+  border: 2px solid #60c095;
+}
+
 #contactForm h3 {
   font-size: 40px;
   line-height: 52px;
   font-weight: 700;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
 
 #formEmail {
-  color: #42526E;
+  color: #42526e;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
@@ -618,4 +618,3 @@ form textarea {
     background-position-y: 100px;
   }
 }
-
