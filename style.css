@@ -4,6 +4,11 @@ html {
   font-family: 'Inter', sans-serif;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
 nav {
   padding-bottom: 100px;
   display: flex;
@@ -95,11 +100,13 @@ section {
 
 body main {
   font-family: 'Inter', sans-serif;
+  height: 130vh;
   background-image: url(Header-llustration-desktop@2x.png);
   background-size: cover;
   background-color: white;
   background-repeat: repeat;
   background-position: center;
+  /* background-position-y: -50px; */
 }
 
 .social {
@@ -132,14 +139,13 @@ body main {
 
 #works {
   color: #172b4d;
-  width: 327px;
   height: 97px;
-  padding-bottom: 36px;
+  padding-bottom: 24px;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  margin-top: 90px;
+  margin-top: 50px;
 }
 
 .cardContainer {
@@ -299,7 +305,7 @@ body main {
   background-color: #008552;
 }
 
-#aboutMe {
+/* #aboutMe {
   height: 353px;
   margin-top: 44px;
   margin-bottom: 35px;
@@ -310,7 +316,7 @@ body main {
   background-image: url(illustration-aboutme-mobile.png);
   background-position: center;
   background-position-y: bottom;
-}
+} */
 
 #aboutMe h2 {
   font-weight: 700;
@@ -507,6 +513,7 @@ form textarea:focus {
   font-size: 20px;
   line-height: 32px;
   padding-bottom: 150px;
+  text-align: center;
 }
 
 /* MEDIA QUERIES */
@@ -585,6 +592,27 @@ form textarea:focus {
     margin: 0;
   }
 
+  #aboutMe {
+    height: 353px;
+    margin-top: 44px;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 375px;
+    background-image: url(illustration-aboutme-mobile.png);
+    background-position: center;
+    background-position-y: bottom;
+  }
+
+  #works {
+    width: 327px;
+  }
+
+  body main {
+    height: 110vh;
+  }
+
   h1,
   h2 {
     font-size: 40px;
@@ -616,5 +644,16 @@ form textarea:focus {
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 100px;
+  }
+}
+
+@media all and (min-width: 800px) {
+  #worksSkills .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    gap: 32px 24px;
   }
 }
