@@ -1,12 +1,12 @@
-# Portfolio: Mobile version 📲!
+# Portfolio: Adding a Contact Form 🧾!
 
-In this project we create the mobile website section where you we will list out future portfolio projects.
+In this contribution we added a required contact form which ask the user for name, email and a brief message.
 
 Main objetives of this new project-feature is:
 * Understand how to parse a Figma design to create a UI.
-* Use Flexbox to place elements in the page.
-* Use CSS Grid to place elements in the page.
-* Build a personal portfolio site.
+* Implement forms, inputs and HTML5 default validators
+* Make use of formspree.io to extract information from form
+* Understand how HTTP post method works
 
 
 ## Built With
@@ -22,7 +22,7 @@ Main objetives of this new project-feature is:
 * Add a .gitignore file.
 * Set up a linter for HTML and CSS and make sure that any files that are not relevant are ignored by git.
 * Continue working with the previously selected template from figma website
-* Build the **works** section and the **about me** section of the mobile website 
+* Add form that make requires user_name, user_email and message in order to be sent to the receipient.
 * Add descriptive README file to your project
 
 ### Install
