@@ -106,7 +106,6 @@ body main {
   background-color: white;
   background-repeat: repeat;
   background-position: center;
-  /* background-position-y: -50px; */
 }
 
 .social {
@@ -161,7 +160,8 @@ body main {
 }
 
 .card3 {
-  height: 352px;
+  height: 377px;
+  height: auto;
 }
 
 .card1 .img {
@@ -305,18 +305,19 @@ body main {
   background-color: #008552;
 }
 
-/* #aboutMe {
-  height: 353px;
-  margin-top: 44px;
-  margin-bottom: 35px;
+#aboutMe {
+  height: 377px;
   display: flex;
+  flex-direction: column;
+  margin-top: 3.5em;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 375px;
   background-image: url(illustration-aboutme-mobile.png);
   background-position: center;
   background-position-y: bottom;
-} */
+  border: 1px solid red;
+}
 
 #aboutMe h2 {
   font-weight: 700;
@@ -334,7 +335,10 @@ body main {
   line-height: 32px;
   color: #42526e;
   text-align: center;
-  margin-top: 0;
+  margin: 0;
+  display: flex;
+  border: 1px solid red;
+  width: 351px;
 }
 
 .img1 {
@@ -517,7 +521,7 @@ form textarea:focus {
 }
 
 /* MEDIA QUERIES */
-@media all and (max-width: 800px) {
+@media all and (max-width: 768px) {
   h1,
   h2 {
     font-size: 36px;
@@ -530,7 +534,7 @@ form textarea:focus {
   }
 
   #supportText {
-    max-width: 860px;
+    max-width: 600px;
     height: 96px;
     font-weight: 400;
     font-size: 20px;
@@ -544,7 +548,7 @@ form textarea:focus {
   }
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 600px) {
   .burguerMenu {
     min-width: 360px;
     height: 130px;
@@ -569,9 +573,13 @@ form textarea:focus {
     line-height: 28px;
     font-weight: 600;
   }
+
+  #supportText {
+    max-width: 327px;
+  }
 }
 
-@media all and (max-width: 399px) {
+@media all and (max-width: 600px) {
   nav {
     display: none;
   }
@@ -582,7 +590,7 @@ form textarea:focus {
   }
 }
 
-@media all and (max-width: 485px) {
+@media all and (max-width: 600px) {
   #footer {
     height: 35vh;
     display: flex;
@@ -593,12 +601,10 @@ form textarea:focus {
   }
 
   #aboutMe {
-    height: 353px;
-    margin-top: 44px;
-    margin-bottom: 35px;
+    margin-top: 52px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-around;
     width: 375px;
     background-image: url(illustration-aboutme-mobile.png);
     background-position: center;
@@ -647,7 +653,7 @@ form textarea:focus {
   }
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 768px) {
   #worksSkills .cardContainer {
     display: flex;
     flex-wrap: wrap;
@@ -655,5 +661,54 @@ form textarea:focus {
     justify-content: center;
     max-width: 1200px;
     gap: 32px 24px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  #aboutMe {
+    width: 800px;
+    height: auto;
+  }
+
+  #aboutMe p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #42526e;
+    text-align: center;
+    margin-top: 0;
+    width: 600px;
+    display: flex;
+    border: 1px solid red;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  #aboutMe {
+    width: 992px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #aboutMe p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #42526e;
+    text-align: center;
+    margin-top: 0;
+    width: 992px;
+    display: flex;
+    border: 1px solid red;
+  }
+
+  #aboutMe button {
+    margin-top: 24px;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  #aboutMe button {
+    margin-top: 24px;
   }
 }
