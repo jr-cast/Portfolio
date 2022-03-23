@@ -4,6 +4,11 @@ html {
   font-family: 'Inter', sans-serif;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
 nav {
   padding-bottom: 100px;
   display: flex;
@@ -95,6 +100,7 @@ section {
 
 body main {
   font-family: 'Inter', sans-serif;
+  height: 130vh;
   background-image: url(Header-llustration-desktop@2x.png);
   background-size: cover;
   background-color: white;
@@ -132,14 +138,13 @@ body main {
 
 #works {
   color: #172b4d;
-  width: 327px;
   height: 97px;
-  padding-bottom: 36px;
+  padding-bottom: 24px;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  margin-top: 90px;
+  margin-top: 50px;
 }
 
 .cardContainer {
@@ -155,7 +160,8 @@ body main {
 }
 
 .card3 {
-  height: 352px;
+  height: 377px;
+  height: auto;
 }
 
 .card1 .img {
@@ -300,16 +306,17 @@ body main {
 }
 
 #aboutMe {
-  height: 353px;
-  margin-top: 44px;
-  margin-bottom: 35px;
+  height: 377px;
   display: flex;
+  flex-direction: column;
+  margin-top: 3.5em;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 375px;
   background-image: url(illustration-aboutme-mobile.png);
   background-position: center;
   background-position-y: bottom;
+  border: 1px solid red;
 }
 
 #aboutMe h2 {
@@ -328,7 +335,10 @@ body main {
   line-height: 32px;
   color: #42526e;
   text-align: center;
-  margin-top: 0;
+  margin: 0;
+  display: flex;
+  border: 1px solid red;
+  width: 351px;
 }
 
 .img1 {
@@ -507,10 +517,11 @@ form textarea:focus {
   font-size: 20px;
   line-height: 32px;
   padding-bottom: 150px;
+  text-align: center;
 }
 
 /* MEDIA QUERIES */
-@media all and (max-width: 800px) {
+@media all and (max-width: 768px) {
   h1,
   h2 {
     font-size: 36px;
@@ -523,7 +534,7 @@ form textarea:focus {
   }
 
   #supportText {
-    max-width: 860px;
+    max-width: 600px;
     height: 96px;
     font-weight: 400;
     font-size: 20px;
@@ -537,7 +548,7 @@ form textarea:focus {
   }
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 600px) {
   .burguerMenu {
     min-width: 360px;
     height: 130px;
@@ -562,9 +573,13 @@ form textarea:focus {
     line-height: 28px;
     font-weight: 600;
   }
+
+  #supportText {
+    max-width: 327px;
+  }
 }
 
-@media all and (max-width: 399px) {
+@media all and (max-width: 600px) {
   nav {
     display: none;
   }
@@ -575,7 +590,7 @@ form textarea:focus {
   }
 }
 
-@media all and (max-width: 485px) {
+@media all and (max-width: 600px) {
   #footer {
     height: 35vh;
     display: flex;
@@ -583,6 +598,25 @@ form textarea:focus {
     justify-content: center;
     padding: 0;
     margin: 0;
+  }
+
+  #aboutMe {
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 375px;
+    background-image: url(illustration-aboutme-mobile.png);
+    background-position: center;
+    background-position-y: bottom;
+  }
+
+  #works {
+    width: 327px;
+  }
+
+  body main {
+    height: 110vh;
   }
 
   h1,
@@ -616,5 +650,65 @@ form textarea:focus {
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 100px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  #worksSkills .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    gap: 32px 24px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  #aboutMe {
+    width: 800px;
+    height: auto;
+  }
+
+  #aboutMe p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #42526e;
+    text-align: center;
+    margin-top: 0;
+    width: 600px;
+    display: flex;
+    border: 1px solid red;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  #aboutMe {
+    width: 992px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #aboutMe p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #42526e;
+    text-align: center;
+    margin-top: 0;
+    width: 992px;
+    display: flex;
+    border: 1px solid red;
+  }
+
+  #aboutMe button {
+    margin-top: 24px;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  #aboutMe button {
+    margin-top: 24px;
   }
 }
