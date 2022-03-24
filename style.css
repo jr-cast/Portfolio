@@ -741,20 +741,22 @@ form textarea:focus {
   }
 
   body {
-    background-image: url(static/illustration-about\ me-1-desktop@2x.png);
-    background-position: bottom right;
+    background-image: url(static/illustration-about\ me-1-desktop@2x.png), url(static/bottomLeft.svg), url(static/bottomMiddle.png), url(static/bottomRight.png);
+    background-position: bottom right, bottom left, bottom, bottom;
     background-repeat: no-repeat;
-    background-size: 18%;
-    background-position-y: 63%;  
+    background-size: 18%, 18%, 10%, 18%;
+    background-position-y: 63%, 99%, 95%, 99%;
+    background-position-x: 100%, 0, 25%, 100%;
   }
 
   #forFlex {
     width: 1056px;
     display: flex;
-    border: 1px solid rebeccapurple;
+    border-bottom: 1px solid #dfe1e6;;
     margin-top: 3em;
     align-items: center;
     justify-content: center;
+    padding-bottom: 300px;
   }
 
   #forFlex h3 {
@@ -765,7 +767,7 @@ form textarea:focus {
     color: #172b4d;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    border: 1px solid rebeccapurple;
+    padding-bottom: 3em;
     flex: 1.5;
   }
 
@@ -781,7 +783,6 @@ form textarea:focus {
     margin-top: 0;
     display: flex;
     align-items: flex-end;
-    border: 1px solid rebeccapurple;
   }
 
   #contactForm form button{
@@ -792,8 +793,7 @@ form textarea:focus {
     display: none;
   }
 
-  #contactForm .social {
-    height: 300px;
-    align-items: flex-end;
+  #contactForm {
+    background: none;
   }
 }
