@@ -1,12 +1,12 @@
-# Portfolio: Adding a Contact Form 🧾!
+# Portfolio: Adjusting Desktop Version 🖥️!
 
-In this contribution we added a required contact form which ask the user for name, email and a brief message.
+In this new iteration the full desktop layout of the portfolio was tackled.
 
-Main objetives of this new project-feature is:
+* Main objetives of this new project-feature is:
+* Understand how to create UIs adaptable to different screen sizes using media queries.
 * Understand how to parse a Figma design to create a UI.
 * Implement forms, inputs and HTML5 default validators
-* Make use of formspree.io to extract information from form
-* Understand how HTTP post method works
+* Make sure conversion from mobile to desktop works without major issues
 
 
 ## Built With
@@ -22,7 +22,7 @@ Main objetives of this new project-feature is:
 * Add a .gitignore file.
 * Set up a linter for HTML and CSS and make sure that any files that are not relevant are ignored by git.
 * Continue working with the previously selected template from figma website
-* Add form that make requires user_name, user_email and message in order to be sent to the receipient.
+* Continue to add changes to project with relevant details shown in figma template
 * Add descriptive README file to your project
 
 ### Install
