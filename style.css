@@ -316,7 +316,6 @@ body main {
   background-image: url(illustration-aboutme-mobile.png);
   background-position: center;
   background-position-y: bottom;
-  border: 1px solid red;
 }
 
 #aboutMe h2 {
@@ -698,6 +697,7 @@ form textarea:focus {
 @media all and (min-width: 1100px) {
   #aboutMe {
     width: 100%;
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
     background-image: none;
@@ -736,7 +736,7 @@ form textarea:focus {
     background-image: url(static/illustration-about-me-2-desktop@2x.png);
     background-position: bottom left;
     background-repeat: no-repeat;
-    background-size: 20%;
+    background-size: 18%;
     background-position-y: 73%;  
   }
 
@@ -744,7 +744,56 @@ form textarea:focus {
     background-image: url(static/illustration-about\ me-1-desktop@2x.png);
     background-position: bottom right;
     background-repeat: no-repeat;
-    background-size: 20%;
-    background-position-y: 60%;  
+    background-size: 18%;
+    background-position-y: 63%;  
+  }
+
+  #forFlex {
+    width: 1056px;
+    display: flex;
+    border: 1px solid rebeccapurple;
+    margin-top: 3em;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #forFlex h3 {
+    font-size: 30px;
+    line-height: 52px;
+    font-weight: 700;
+    text-align: center;
+    color: #172b4d;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border: 1px solid rebeccapurple;
+    flex: 1.5;
+  }
+
+  #forFlex form {
+    flex: 2;
+  }
+
+  form #msg {
+    height: 8em;
+  }
+
+  #contactForm form {
+    margin-top: 0;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid rebeccapurple;
+  }
+
+  #contactForm form button{
+      margin-right: 430px;
+  }
+
+  #formEmail {
+    display: none;
+  }
+
+  #contactForm .social {
+    height: 300px;
+    align-items: flex-end;
   }
 }
