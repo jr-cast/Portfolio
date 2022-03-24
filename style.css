@@ -347,9 +347,13 @@ body main {
   border-radius: 3em;
 }
 
+#port {
+  transition-property: color;
+  transition-duration: 1s;
+  color: black;
+}
+
 #port:hover {
-  font-size: large;
-  font-weight: bolder;
   color: #00ab84;
 }
 
