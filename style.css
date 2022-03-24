@@ -347,13 +347,33 @@ body main {
   border-radius: 3em;
 }
 
-#port {
+#port1 {
   transition-property: color;
   transition-duration: 1s;
   color: black;
 }
 
-#port:hover {
+#port1:hover {
+  color: #00ab84;
+}
+
+#port2 {
+  transition-property: color;
+  transition-duration: 1s;
+  color: black;
+}
+
+#port2:hover {
+  color: #00ab84;
+}
+
+#port3 {
+  transition-property: color;
+  transition-duration: 1s;
+  color: black;
+}
+
+#port3:hover {
   color: #00ab84;
 }
 
