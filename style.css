@@ -737,7 +737,7 @@ form textarea:focus {
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: 18%;
-    background-position-y: 73%;  
+    background-position-y: 73%;
   }
 
   body {
@@ -752,7 +752,7 @@ form textarea:focus {
   #forFlex {
     width: 1056px;
     display: flex;
-    border-bottom: 1px solid #dfe1e6;;
+    border-bottom: 1px solid #dfe1e6;
     margin-top: 3em;
     align-items: center;
     justify-content: center;
@@ -785,8 +785,8 @@ form textarea:focus {
     align-items: flex-end;
   }
 
-  #contactForm form button{
-      margin-right: 430px;
+  #contactForm form button {
+    margin-right: 430px;
   }
 
   #formEmail {
