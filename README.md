@@ -1,13 +1,13 @@
-# Portfolio: Adjusting Desktop Version 🖥️!
+# Portfolio: Application deploy ☁️!
 
-In this new iteration the full desktop layout of the portfolio was tackled.
+In this new iteration the portfolio site was deployed into the web using the GitHub Web Pages service
 
-* Main objetives of this new project-feature is:
-* Understand how to create UIs adaptable to different screen sizes using media queries.
-* Understand how to parse a Figma design to create a UI.
-* Implement forms, inputs and HTML5 default validators
-* Make sure conversion from mobile to desktop works without major issues
+Main objetives of this new project-feature is:
+* Deploy your website using GitHub Pages.
+* Check the online version of your portfolio and make sure that the page works properly.
+* Update the README of your repository to include a link to the online version.
 
+Check out the website [HERE](https://jr-cast.github.io/Portfolio/);
 
 ## Built With
 * HTML
@@ -21,8 +21,7 @@ In this new iteration the full desktop layout of the portfolio was tackled.
 * Create a new branch according to the GitHub flow rules.
 * Add a .gitignore file.
 * Set up a linter for HTML and CSS and make sure that any files that are not relevant are ignored by git.
-* Continue working with the previously selected template from figma website
-* Continue to add changes to project with relevant details shown in figma template
+* Enable GH web Page on portfolio repository to deploy it on the web
 * Add descriptive README file to your project
 
 ### Install
@@ -45,7 +44,7 @@ Check the templates on Figma website
 
 * GitHub: @jr-cast
 * Twitter: @josercastanos
-* LinkedIn: https://www.linkedin.com/in/jr-casgit 
+* LinkedIn: https://www.linkedin.com/in/jr-cast
 
 ## Contributing
 
