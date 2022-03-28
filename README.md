@@ -44,7 +44,7 @@ Check the templates on Figma website
 
 * GitHub: @jr-cast
 * Twitter: @josercastanos
-* LinkedIn: https://www.linkedin.com/in/jr-cas
+* LinkedIn: https://www.linkedin.com/in/jr-cast
 
 ## Contributing
 
