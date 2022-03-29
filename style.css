@@ -135,7 +135,7 @@ i:hover {
 }
 
 #footer i {
-  transition-property: transform;
+  transition-pro perty: transform;
   transition-duration: 0.15s;
   transition-timing-function: ease-in;
 }
