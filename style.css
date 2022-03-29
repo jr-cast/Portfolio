@@ -129,6 +129,17 @@ body main {
   margin-top: 0.7em;
 }
 
+i:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+#footer i {
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in;
+}
+
 #footer button {
   margin-top: 30px;
   border-radius: 50%;
@@ -185,6 +196,17 @@ body main {
   border-radius: 8px;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.card1:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card1 {
+  transition-property: transform;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in;
 }
 
 .img .cardFooter {
@@ -361,7 +383,7 @@ body main {
 
 #port1 {
   transition-property: color;
-  transition-duration: 1s;
+  transition-duration: 500ms;
   color: black;
 }
 
@@ -371,7 +393,7 @@ body main {
 
 #port2 {
   transition-property: color;
-  transition-duration: 1s;
+  transition-duration: 500ms;
   color: black;
 }
 
@@ -381,7 +403,7 @@ body main {
 
 #port3 {
   transition-property: color;
-  transition-duration: 1s;
+  transition-duration: 500ms;
   color: black;
 }
 
