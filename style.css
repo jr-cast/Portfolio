@@ -385,7 +385,7 @@ i:hover {
   transition-property: color;
   transition-duration: 500ms;
   color: #36b37f;
-  font-weight: bolder
+  font-weight: bolder;
 }
 
 #port1:hover {
@@ -396,7 +396,7 @@ i:hover {
   transition-property: color;
   transition-duration: 500ms;
   color: #36b37f;
-  font-weight: bolder
+  font-weight: bolder;
 }
 
 #port2:hover {
@@ -407,7 +407,7 @@ i:hover {
   transition-property: color;
   transition-duration: 500ms;
   color: #36b37f;
-  font-weight: bolder
+  font-weight: bolder;
 }
 
 #port3:hover {
