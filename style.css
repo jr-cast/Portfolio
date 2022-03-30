@@ -384,31 +384,34 @@ i:hover {
 #port1 {
   transition-property: color;
   transition-duration: 500ms;
-  color: black;
+  color: #36b37f;
+  font-weight: bolder
 }
 
 #port1:hover {
-  color: #00ab84;
+  color: black;
 }
 
 #port2 {
   transition-property: color;
   transition-duration: 500ms;
-  color: black;
+  color: #36b37f;
+  font-weight: bolder
 }
 
 #port2:hover {
-  color: #00ab84;
+  color: black;
 }
 
 #port3 {
   transition-property: color;
   transition-duration: 500ms;
-  color: black;
+  color: #36b37f;
+  font-weight: bolder
 }
 
 #port3:hover {
-  color: #00ab84;
+  color: black;
 }
 
 #about:hover {
