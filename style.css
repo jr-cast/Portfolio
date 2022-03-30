@@ -135,7 +135,7 @@ i:hover {
 }
 
 #footer i {
-  transition-pro perty: transform;
+  transition-property: transform;
   transition-duration: 0.15s;
   transition-timing-function: ease-in;
 }
@@ -198,15 +198,15 @@ i:hover {
   justify-content: space-between;
 }
 
-.card1:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
 .card1 {
   transition-property: transform;
   transition-duration: 0.1s;
   transition-timing-function: ease-in;
+}
+
+.card1:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .img .cardFooter {
@@ -676,7 +676,7 @@ form textarea:focus {
 
   h1,
   h2 {
-    font-size: 2.5e;
+    font-size: 2.5em;
     margin: 0;
     padding: 0;
     font-style: normal;
