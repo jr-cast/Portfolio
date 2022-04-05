@@ -16,14 +16,6 @@ body {
   align-items: center;
 }
 
-#hiddenNav {
-  padding-bottom: 100px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 2em;
-  align-items: center;
-}
-
 i:hover {
   transform: scale(1.4);
   cursor: pointer;
@@ -439,6 +431,39 @@ body main {
   color: black;
 }
 
+#port4 {
+  transition-property: color;
+  transition-duration: 500ms;
+  color: #36b37f;
+  font-weight: bolder;
+}
+
+#port4:hover {
+  color: black;
+}
+
+#port5 {
+  transition-property: color;
+  transition-duration: 500ms;
+  color: #36b37f;
+  font-weight: bolder;
+}
+
+#port5:hover {
+  color: black;
+}
+
+#port6 {
+  transition-property: color;
+  transition-duration: 500ms;
+  color: #36b37f;
+  font-weight: bolder;
+}
+
+#port6:hover {
+  color: black;
+}
+
 #about:hover {
   font-size: large;
   font-weight: bolder;
@@ -704,6 +729,14 @@ form textarea:focus {
   #closebtn_img {
     display: block;
   }
+
+  #hiddenNav {
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    align-items: center;
+  }
 }
 
 @media all and (max-width: 600px) {
@@ -874,9 +907,7 @@ form textarea:focus {
   }
 
   body {
-    background-image: url(static/illustration-about\ me-1-desktop@2x.png),
-      url(static/bottomLeft.svg), url(static/bottomMiddle.png),
-      url(static/bottomRight.png);
+    background-image: url(static/illustration-about\ me-1-desktop@2x.png), url(static/bottomLeft.svg), url(static/bottomMiddle.png), url(static/bottomRight.png);
     background-position: bottom right, bottom left, bottom, bottom;
     background-repeat: no-repeat;
     background-size: 18%, 18%, 10%, 18%;
