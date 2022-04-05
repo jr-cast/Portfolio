@@ -17,20 +17,21 @@
 <body>
     <main>
         <header>
-            <nav id="hiddenNav" class="">
-                <div id="closebtn" class="xBtn"><img src="static/Icon - Cancel.svg" alt=""></div>
+            <nav id="hiddenNav">
+                <div id="closebtn" class="xBtn"><img id="closebtn_img" src="static/Icon - Cancel.svg" alt=""></div>
                 <ul>
-                    <li><span><a id="port1" href="">Portfolio</a></span></li>
-                    <li><span><a id="port2" href="">About</a></span></li>
-                    <li><span><a id="port3" href="">Contact</a></span></li>
+                    <li><span><a class='redirect' id="port1" href="#works" onclick="redirect()">Portfolio</a></span>
+                    </li>
+                    <li><span><a class='redirect' id="port2" href="#aboutMe" onclick="redirect()">About</a></span></li>
+                    <li><span><a class='redirect' id="port3" href="#contactForm" onclick="redirect()">Contact</a></span>
+                    </li>
                 </ul>
-
-
             </nav>
+
             <nav class="burguerMenu">
                 <a class="logo" href="#">Welcome</a>
                 <div></div>
-                <i class="fa-solid fa-bars fa-2x"></i>
+                <i id="listIcon" class="fa-solid fa-bars fa-2x"></i>
             </nav>
 
         </header>

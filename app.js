@@ -1,7 +1,8 @@
-let hiddenNav = document.getElementById('hiddenNav');
-let closeBtn = document.getElementById('closebtn');
-let icon = document.querySelector('i');
-let xBtn = document.getElementById('closebtn');
+const hiddenNav = document.getElementById('hiddenNav');
+const closeBtn = document.getElementById('closebtn');
+const icon = document.querySelector('i');
+const xBtn = document.getElementById('closebtn');
+
 
 let openmenu = true;
 
@@ -21,3 +22,17 @@ icon.addEventListener('click', function (evt) {
     }
 });
 
+xBtn.addEventListener('click', function (evt) {
+    if (openmenu = true) {
+        hiddenNav.style = 'display: none;';
+        hiddenNav.classList.toggle('showNav');
+    }
+});
+
+function redirect() {
+    if (openmenu = true) {
+        let anchors = document.getElementsByClassName('redirect');
+        hiddenNav.style = 'display: none;';
+        hiddenNav.classList.toggle('showNav');
+    }
+};

@@ -21,6 +21,10 @@ body {
   padding-left: 100px;
 }
 
+#closebtn_img {
+  display: none;
+}
+
 ul {
   display: flex;
   width: 300px;
@@ -50,47 +54,8 @@ a {
   display: none;
 }
 
-.showNav {
-  z-index: 99;
-  display: flex;
-  position: fixed;
-  width: 100vw;
-  height: 90vh;
-  background-color: white;
-}
-
-.showNav ul {
-  display: flex;
-  flex-direction: column;
-  margin-left: 2em;
-}
-
-.showNav #port1,
-.showNav #port2,
-.showNav #port3 {
-  color: #3a4a42;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 60px;
-}
-
 .xBtn {
   display: none;
-}
-
-.xBtnStyle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#closebtn {
-  width: calc(100% - 2em);
-  display: flex;
-  display: none;
-  align-items: center;
-  justify-content: flex-end;
-  padding-right: 3em;
 }
 
 /* HERO */
@@ -676,6 +641,53 @@ form textarea:focus {
 
   #supportText {
     max-width: 327px;
+  }
+
+  #listIcon {
+    transform: none;
+  }
+
+  .showNav {
+    z-index: 99;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+  }
+  
+  .showNav ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+  }
+  
+  .showNav #port1,
+  .showNav #port2,
+  .showNav #port3 {
+    color: #3a4a42;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 60px;
+  }
+
+  .xBtnStyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #closebtn {
+    width: calc(100% - 2em);
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 3em;
+  }
+
+  #closebtn_img {
+    display: block;
   }
 }
 
