@@ -36,4 +36,9 @@ function redirect() {
   }
 }
 
+function detailsAction() {
+  const mainDetails = document.getElementById('mainDetails');
+  mainDetails.classList.toggle('details-card-none');
+}
+
 redirect();

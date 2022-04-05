@@ -92,7 +92,7 @@
                             <li>JavaScript</li>
                             <li>HTML</li>
                         </ul>
-                        <button type="button" class="cardBtn">
+                        <button type="button" class="cardBtn" onclick="detailsAction()">
                             See Project
                         </button>
                     </div>
@@ -112,7 +112,7 @@
                             <li>JavaScript</li>
                             <li>HTML</li>
                         </ul>
-                        <button type="button" class="cardBtn">
+                        <button type="button" class="cardBtn" onclick="detailsAction()">
                             See Project
                         </button>
                     </div>
@@ -132,7 +132,7 @@
                             <li>JavaScript</li>
                             <li>HTML</li>
                         </ul>
-                        <button type="button" class="cardBtn">
+                        <button type="button" class="cardBtn" onclick="detailsAction()">
                             See Project
                         </button>
                     </div>
@@ -152,7 +152,7 @@
                             <li>JavaScript</li>
                             <li>HTML</li>
                         </ul>
-                        <button type="button" class="cardBtn">
+                        <button type="button" class="cardBtn" onclick="detailsAction()">
                             See Project
                         </button>
                     </div>
@@ -172,7 +172,7 @@
                             <li>JavaScript</li>
                             <li>HTML</li>
                         </ul>
-                        <button type="button" class="cardBtn">
+                        <button type="button" class="cardBtn" onclick="detailsAction()">
                             See Project
                         </button>
                     </div>
@@ -192,7 +192,7 @@
                             <li>JavaScript</li>
                             <li>HTML</li>
                         </ul>
-                        <button type="button" class="cardBtn">
+                        <button type="button" class="cardBtn" onclick="detailsAction()">
                             See Project
                         </button>
                     </div>
@@ -294,9 +294,9 @@
     <p id="formEmail">castanos@protonmail.com</p>
     <script src="app.js"></script>
 
-    <section class="main-details">
+    <section id="mainDetails" class="main-details details-card-none ">
         <section class="inner-details">
-            <div class="detail-button-container"><img src="static/Disabled.svg" alt="close button"></div>
+            <div class="detail-button-container"><img src="static/Disabled.svg" alt="close button" onclick="detailsAction()"></div>
             <div class="detail-img-container">
                 <img src="static/SnapshootPortfolio.png" alt="main project image">
             </div>
@@ -311,7 +311,7 @@
                     <li>Codepen</li>
                 </ul>
             </div>
-            <div>
+            <div class="detail-btn-container">
                 <a class="detail-btn" href="#">See Live <img src="static/IconExport.svg" alt="see live button"></a>
                 <a class="detail-btn" href="#">See Source <img src="static/IconGitHub.png" alt="see source button"></a>
             </div>
