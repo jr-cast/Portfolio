@@ -17,6 +17,11 @@ body {
   align-items: center;
 }
 
+i:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
 #hiddenNav i {
   padding-left: 100px;
 }
@@ -137,11 +142,6 @@ body main {
 
 #contactForm button {
   margin-top: 0.7em;
-}
-
-i:hover {
-  transform: scale(1.4);
-  cursor: pointer;
 }
 
 #footer i {
@@ -655,13 +655,13 @@ form textarea:focus {
     height: 100vh;
     background-color: white;
   }
-  
+
   .showNav ul {
     display: flex;
     flex-direction: column;
     margin-left: 2em;
   }
-  
+
   .showNav #port1,
   .showNav #port2,
   .showNav #port3 {
@@ -676,7 +676,7 @@ form textarea:focus {
     align-items: center;
     justify-content: center;
   }
-  
+
   #closebtn {
     width: calc(100% - 2em);
     display: flex;
