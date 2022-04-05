@@ -1,10 +1,10 @@
-# Portfolio: Application deploy ☁️!
+# Portfolio: Mobile menu :rocket:!
 
-In this new iteration the portfolio site was deployed into the web using the GitHub Web Pages service
+In this new iteration the portfolio mobile-menu functionality was implemented using JS
 
 Main objetives of this new project-feature is:
-* Deploy your website using GitHub Pages.
-* Check the online version of your portfolio and make sure that the page works properly.
+* DOM manipulation
+* Learn how to implement JS along side HTML and CSS to increase funtionality in websites
 * Update the README of your repository to include a link to the online version.
 
 Check out the website [HERE](https://jr-cast.github.io/Portfolio/);
