@@ -1,7 +1,6 @@
-
 /* NAVBAR */
 html {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -9,14 +8,33 @@ body {
   margin: 0;
 }
 
-nav {
+#mainNav {
   padding-bottom: 100px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  margin-top: 2em;
+  align-items: center;
 }
 
-nav i {
+i:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+#mainNav i {
   padding-left: 100px;
+}
+
+#hiddenNav i {
+  padding-left: 100px;
+}
+
+#hiddenNav {
+  display: none;
+}
+
+#closebtn_img {
+  display: none;
 }
 
 ul {
@@ -48,6 +66,10 @@ a {
   display: none;
 }
 
+.xBtn {
+  display: none;
+}
+
 /* HERO */
 hgroup {
   text-align: center;
@@ -70,7 +92,7 @@ h2 {
 
 h1,
 h2 {
-  font-size: 48px;
+  font-size: 3em;
   margin: 0;
   padding: 0;
   font-style: normal;
@@ -83,7 +105,7 @@ h2 {
   max-width: 860px;
   height: 96px;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25em;
   line-height: 32px;
   text-align: center;
   color: #172b4d;
@@ -99,7 +121,7 @@ section {
 }
 
 body main {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   height: 130vh;
   background-image: url(static/Header-llustration-desktop@2x.png);
   background-size: cover;
@@ -129,13 +151,8 @@ body main {
   margin-top: 0.7em;
 }
 
-i:hover {
-  transform: scale(1.4);
-  cursor: pointer;
-}
-
 #footer i {
-  transition-pro perty: transform;
+  transition-property: transform;
   transition-duration: 0.15s;
   transition-timing-function: ease-in;
 }
@@ -164,7 +181,7 @@ i:hover {
   height: 97px;
   padding-bottom: 24px;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2.5em;
   line-height: 52px;
   text-align: center;
   margin-top: 50px;
@@ -198,15 +215,15 @@ i:hover {
   justify-content: space-between;
 }
 
-.card1:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
 .card1 {
   transition-property: transform;
   transition-duration: 0.1s;
   transition-timing-function: ease-in;
+}
+
+.card1:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .img .cardFooter {
@@ -229,7 +246,7 @@ i:hover {
   margin-top: 16px;
   font-family: inter, sans-serif;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 32px;
   text-align: center;
   color: #3a4a42;
@@ -256,7 +273,7 @@ i:hover {
 
 .skillFooter2 .tags li {
   padding: 12px;
-  font-size: 12px;
+  font-size: 0.75em;
   border-radius: 8px;
   background-color: #fff;
   color: #36b37e;
@@ -277,7 +294,7 @@ i:hover {
 
 .skillFooter .tags li {
   padding: 12px;
-  font-size: 12px;
+  font-size: 0.75em;
   border-radius: 8px;
   background-color: #fff;
   color: #36b37e;
@@ -288,7 +305,7 @@ i:hover {
 
 .img .cardFooter .tags li {
   padding: 8px 12px;
-  font-size: 12px;
+  font-size: 0.75em;
   font-weight: 600;
   border-radius: 4px;
   background-color: #ebf0ee;
@@ -298,7 +315,7 @@ i:hover {
   border-radius: 4px;
   width: 122px;
   height: 48px;
-  font-size: 17px;
+  font-size: 1.063em;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 3%;
@@ -321,7 +338,7 @@ i:hover {
   border-radius: 4px;
   width: 159px;
   height: 48px;
-  font-size: 17px;
+  font-size: 1.063em;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 3%;
@@ -354,7 +371,7 @@ i:hover {
 
 #aboutMe h2 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2.5em;
   color: #172b4d;
   display: flex;
   justify-content: center;
@@ -364,7 +381,7 @@ i:hover {
 
 #aboutMe p {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25em;
   line-height: 32px;
   color: #42526e;
   text-align: center;
@@ -384,31 +401,67 @@ i:hover {
 #port1 {
   transition-property: color;
   transition-duration: 500ms;
-  color: black;
+  color: #36b37f;
+  font-weight: bolder;
 }
 
 #port1:hover {
-  color: #00ab84;
+  color: black;
 }
 
 #port2 {
   transition-property: color;
   transition-duration: 500ms;
-  color: black;
+  color: #36b37f;
+  font-weight: bolder;
 }
 
 #port2:hover {
-  color: #00ab84;
+  color: black;
 }
 
 #port3 {
   transition-property: color;
   transition-duration: 500ms;
-  color: black;
+  color: #36b37f;
+  font-weight: bolder;
 }
 
 #port3:hover {
-  color: #00ab84;
+  color: black;
+}
+
+#port4 {
+  transition-property: color;
+  transition-duration: 500ms;
+  color: #36b37f;
+  font-weight: bolder;
+}
+
+#port4:hover {
+  color: black;
+}
+
+#port5 {
+  transition-property: color;
+  transition-duration: 500ms;
+  color: #36b37f;
+  font-weight: bolder;
+}
+
+#port5:hover {
+  color: black;
+}
+
+#port6 {
+  transition-property: color;
+  transition-duration: 500ms;
+  color: #36b37f;
+  font-weight: bolder;
+}
+
+#port6:hover {
+  color: black;
 }
 
 #about:hover {
@@ -485,7 +538,7 @@ i:hover {
 
 .skillFooter h3 {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 32px;
   text-align: center;
   color: #344563;
@@ -501,7 +554,7 @@ i:hover {
 
 .skillFooter2 h3 {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 32px;
   text-align: center;
   color: #344563;
@@ -536,7 +589,7 @@ form input,
 textarea {
   width: calc(100% - 4em);
   padding: 1em;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   border: 1px solid #d0d9d4;
   border-radius: 0.3em;
   font-size: 1em;
@@ -554,7 +607,7 @@ form textarea:focus {
 }
 
 #contactForm h3 {
-  font-size: 40px;
+  font-size: 2.5em;
   line-height: 52px;
   font-weight: 700;
   text-align: center;
@@ -566,7 +619,7 @@ form textarea:focus {
 #formEmail {
   color: #42526e;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25em;
   line-height: 32px;
   padding-bottom: 150px;
   text-align: center;
@@ -576,7 +629,7 @@ form textarea:focus {
 @media all and (max-width: 768px) {
   h1,
   h2 {
-    font-size: 36px;
+    font-size: 2.25em;
     margin: 0;
     padding: 0;
     font-style: normal;
@@ -589,7 +642,7 @@ form textarea:focus {
     max-width: 600px;
     height: 96px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 28px;
     text-align: center;
     margin: 0;
@@ -621,7 +674,7 @@ form textarea:focus {
 
   .burguerMenu > span {
     flex: 2;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 28px;
     font-weight: 600;
   }
@@ -629,10 +682,69 @@ form textarea:focus {
   #supportText {
     max-width: 327px;
   }
+
+  #listIcon {
+    transform: none;
+  }
+
+  .showNav {
+    z-index: 99;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+  }
+
+  .showNav ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+  }
+
+  .showNav #port1,
+  .showNav #port2,
+  .showNav #port3 {
+    color: #3a4a42;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 60px;
+  }
+
+  .xBtnStyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #closebtn {
+    width: calc(100% - 2em);
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 3em;
+  }
+
+  #closebtn_img {
+    display: block;
+  }
+
+  #hiddenNav {
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    align-items: center;
+  }
 }
 
 @media all and (max-width: 600px) {
-  nav {
+  #hiddenNav {
+    display: none;
+  }
+
+  #mainNav {
     display: none;
   }
 
@@ -673,7 +785,7 @@ form textarea:focus {
 
   h1,
   h2 {
-    font-size: 40px;
+    font-size: 2.5em;
     margin: 0;
     padding: 0;
     font-style: normal;
@@ -695,7 +807,7 @@ form textarea:focus {
 
 @media all and (max-width: 1100px) {
   body main {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     background-image: url(static/Header-llustration-desktop@2x.png);
     background-size: 200%;
     background-color: white;
@@ -738,7 +850,7 @@ form textarea:focus {
 
   #aboutMe p {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 32px;
     color: #42526e;
     text-align: center;
@@ -763,7 +875,7 @@ form textarea:focus {
 
   #aboutMe p {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 32px;
     color: #42526e;
     text-align: center;
@@ -814,7 +926,7 @@ form textarea:focus {
   }
 
   #forFlex h3 {
-    font-size: 30px;
+    font-size: 1.875em;
     line-height: 52px;
     font-weight: 700;
     text-align: center;
