@@ -1,12 +1,14 @@
-# Portfolio: Mobile menu :rocket:!
+# Portfolio: Introduction to JS objects 🛸!
 
-In this new iteration the portfolio mobile-menu functionality was implemented using JS
+In this new iteration the portfolio extra funtionalities were added to detail cards implementing js objects to store specific information
 
 Main objetives of this new project-feature is:
 
 - DOM manipulation
 
 - Learn how to implement JS along side HTML and CSS to increase funtionality in websites
+
+- Design, store and implement data from JS objects
 
 - Update the README of your repository to include a link to the online version.
 
