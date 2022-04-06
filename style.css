@@ -645,13 +645,14 @@ form textarea:focus {
     width: 100%;
     max-width: 50em;
     padding: 1.5em;
-    height: calc(100% - 5em);
+    height: calc(100% - 3.5em);
     max-height: 70em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: white;
     border-radius: 0.7em;
+    font-size: 0.8em;
   }
 
   .detail-button-container {
@@ -675,9 +676,9 @@ form textarea:focus {
 
   .details-header {
     width: 100%;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 600;
-    line-height: 44px;
+    line-height: 32px;
     color: #172b4d;
   }
 
@@ -958,7 +959,7 @@ form textarea:focus {
     width: 100%;
     max-width: 50em;
     padding: 1.5em;
-    height: calc(100% - 5em);
+    height: calc(100% - 3.5em);
     max-height: 70em;
     display: flex;
     flex-wrap: wrap;
@@ -988,9 +989,9 @@ form textarea:focus {
   }
 
   .details-header {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 700;
-    line-height: 44px;
+    line-height: 30px;
     color: #172b4d;
   }
 
