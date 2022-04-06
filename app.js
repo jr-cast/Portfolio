@@ -99,53 +99,6 @@ const projectsStore = [
   },
 ];
 
-// Create cards dynamically with for loop
-for (let i = 0; i < projectsStore.length; i++) {
-  let card = document.createElement('div');
-  card.className = 'card1';
-  card.id = `card${i}`;
-  let imgCont = document.createElement('div');
-  imgCont.className = 'img';
-  imgCont.id = `imgCont${i}`;
-  let img = document.createElement('img');
-  img.className = 'img1';
-  img.src = (projectsStore[i])["card-img"];
-  let cardFooter = document.createElement('div');
-  cardFooter.className = 'cardFooter';
-  cardFooter.id = `cardFooter${i}`;
-  let footerTitle = document.createElement('div');
-  footerTitle.className = 'footerTitle';
-  footerTitle.id = `footerTitle${i}`;
-  let title = document.createElement('h3');
-  title.className = 'cardHeader';
-  title.id = `title${i}`;
-  let ul = document.createElement('ul');
-  ul.className = 'tags';
-  ul.id = `ul${i}`;
-  for (let j = 0; j < projectsStore[i]["det-list-cont"].length; j += 1) {
-    let detli = document.createElement('li');
-    detli.innerHTML = projectsStore[i]["det-list-cont"][j];
-   ul.appendChild(detli);
-  }
-  let cardButton = document.createElement('button');
-  cardButton.className = 'cardBtn';
-  cardButton.id = `cardBtn${i}`;
-  cardButton.innerHTML = 'See Project'
-  cardButton.onclick = function openDetails() {
-    detailsAction(i);
-  }
-
-  title.innerHTML = (projectsStore[i])["det-header"];
-  document.getElementById('cardCont').appendChild(card);
-  document.getElementById(`card${i}`).appendChild(imgCont);
-  document.getElementById(`imgCont${i}`).appendChild(img);
-  document.getElementById(`imgCont${i}`).appendChild(cardFooter);
-  document.getElementById(`cardFooter${i}`).appendChild(footerTitle);
-  document.getElementById(`footerTitle${i}`).appendChild(title);
-  document.getElementById(`cardFooter${i}`).appendChild(ul);
-  document.getElementById(`cardFooter${i}`).appendChild(cardButton);
-}
-
 function detailsAction(id) {
   const mainDetails = document.getElementById('mainDetails');
   mainDetails.classList.toggle('details-card-none');
@@ -167,6 +120,53 @@ function detailsAction(id) {
     const source = document.getElementById('det-btn-source');
     source.href = projectsStore[id]['det-btn-source'];
   }
+}
+
+// Create cards dynamically with for loop
+for (let i = 0; i < projectsStore.length; i += 1) {
+  const card = document.createElement('div');
+  card.className = 'card1';
+  card.id = `card${i}`;
+  const imgCont = document.createElement('div');
+  imgCont.className = 'img';
+  imgCont.id = `imgCont${i}`;
+  const img = document.createElement('img');
+  img.className = 'img1';
+  img.src = (projectsStore[i])['card-img'];
+  const cardFooter = document.createElement('div');
+  cardFooter.className = 'cardFooter';
+  cardFooter.id = `cardFooter${i}`;
+  const footerTitle = document.createElement('div');
+  footerTitle.className = 'footerTitle';
+  footerTitle.id = `footerTitle${i}`;
+  const title = document.createElement('h3');
+  title.className = 'cardHeader';
+  title.id = `title${i}`;
+  const ul = document.createElement('ul');
+  ul.className = 'tags';
+  ul.id = `ul${i}`;
+  for (let j = 0; j < projectsStore[i]['det-list-cont'].length; j += 1) {
+    const detli = document.createElement('li');
+    detli.innerHTML = projectsStore[i]['det-list-cont'][j];
+    ul.appendChild(detli);
+  }
+  const cardButton = document.createElement('button');
+  cardButton.className = 'cardBtn';
+  cardButton.id = `cardBtn${i}`;
+  cardButton.innerHTML = 'See Project';
+  cardButton.onclick = function openDetails() {
+    detailsAction(i);
+  };
+
+  title.innerHTML = (projectsStore[i])['det-header'];
+  document.getElementById('cardCont').appendChild(card);
+  document.getElementById(`card${i}`).appendChild(imgCont);
+  document.getElementById(`imgCont${i}`).appendChild(img);
+  document.getElementById(`imgCont${i}`).appendChild(cardFooter);
+  document.getElementById(`cardFooter${i}`).appendChild(footerTitle);
+  document.getElementById(`footerTitle${i}`).appendChild(title);
+  document.getElementById(`cardFooter${i}`).appendChild(ul);
+  document.getElementById(`cardFooter${i}`).appendChild(cardButton);
 }
 
 redirect();
