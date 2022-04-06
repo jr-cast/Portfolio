@@ -1128,9 +1128,7 @@ form textarea:focus {
   }
 
   body {
-    background-image: url(static/illustration-about\ me-1-desktop@2x.png),
-      url(static/bottomLeft.svg), url(static/bottomMiddle.png),
-      url(static/bottomRight.png);
+    background-image: url(static/illustration-about\ me-1-desktop@2x.png), url(static/bottomLeft.svg), url(static/bottomMiddle.png), url(static/bottomRight.png);
     background-position: bottom right, bottom left, bottom, bottom;
     background-repeat: no-repeat;
     background-size: 18%, 18%, 10%, 18%;
