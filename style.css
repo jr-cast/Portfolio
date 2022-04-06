@@ -662,6 +662,15 @@ form textarea:focus {
     justify-content: flex-end;
   }
 
+  .detail-img-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .detail-button-container img {
+    margin-bottom: 0.5em;
+  }
+
   .inner-details .detail-btn img {
     width: 20px;
   }
@@ -691,11 +700,6 @@ form textarea:focus {
     margin-bottom: 1em;
   }
 
-  .detail-img-container img {
-    width: 100%;
-    height: 100%;
-  }
-
   .header-list-cont ul {
     width: 90%;
     display: flex;
@@ -717,10 +721,6 @@ form textarea:focus {
     gap: 0.6em;
     order: 1;
     width: 100%;
-  }
-
-  .detail-button-container img {
-    margin-bottom: 0.5em;
   }
 
   .detail-btn {
@@ -976,6 +976,11 @@ form textarea:focus {
     justify-content: flex-end;
   }
 
+  .detail-img-container img {
+    width: 100%;
+    height: 100%;
+  }
+
   .inner-details .detail-btn img {
     width: 20px;
   }
@@ -1004,11 +1009,6 @@ form textarea:focus {
     margin-bottom: 1em;
   }
 
-  .detail-img-container img {
-    width: 100%;
-    height: 100%;
-  }
-
   .header-list-cont {
     flex: 1 1 50%;
   }
@@ -1032,10 +1032,6 @@ form textarea:focus {
     align-items: flex-start;
     justify-content: center;
     gap: 0.6em;
-  }
-
-  .detail-button-container img {
-    margin-bottom: 0.5em;
   }
 
   .detail-btn {
@@ -1131,9 +1127,7 @@ form textarea:focus {
   }
 
   body {
-    background-image: url(static/illustration-about\ me-1-desktop@2x.png),
-      url(static/bottomLeft.svg), url(static/bottomMiddle.png),
-      url(static/bottomRight.png);
+    background-image: url(static/illustration-about\ me-1-desktop@2x.png), url(static/bottomLeft.svg), url(static/bottomMiddle.png), url(static/bottomRight.png);
     background-position: bottom right, bottom left, bottom, bottom;
     background-repeat: no-repeat;
     background-size: 18%, 18%, 10%, 18%;
