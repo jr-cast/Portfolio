@@ -965,6 +965,7 @@ form textarea:focus {
     justify-content: center;
     background-color: white;
     border-radius: 0.7em;
+    font-size: 0.8em;
   }
 
   .detail-button-container {
