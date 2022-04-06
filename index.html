@@ -92,7 +92,7 @@
                             <li>JavaScript</li>
                             <li>HTML</li>
                         </ul>
-                        <button type="button" class="cardBtn" onclick="detailsAction()">
+                        <button type="button" class="cardBtn" onclick="detailsAction(0)">
                             See Project
                         </button>
                     </div>
@@ -112,7 +112,7 @@
                             <li>JavaScript</li>
                             <li>HTML</li>
                         </ul>
-                        <button type="button" class="cardBtn" onclick="detailsAction()">
+                        <button type="button" class="cardBtn" onclick="detailsAction(1)">
                             See Project
                         </button>
                     </div>
@@ -132,7 +132,7 @@
                             <li>JavaScript</li>
                             <li>HTML</li>
                         </ul>
-                        <button type="button" class="cardBtn" onclick="detailsAction()">
+                        <button type="button" class="cardBtn" onclick="detailsAction(2)">
                             See Project
                         </button>
                     </div>
@@ -152,7 +152,7 @@
                             <li>JavaScript</li>
                             <li>HTML</li>
                         </ul>
-                        <button type="button" class="cardBtn" onclick="detailsAction()">
+                        <button type="button" class="cardBtn" onclick="detailsAction(3)">
                             See Project
                         </button>
                     </div>
@@ -172,7 +172,7 @@
                             <li>JavaScript</li>
                             <li>HTML</li>
                         </ul>
-                        <button type="button" class="cardBtn" onclick="detailsAction()">
+                        <button type="button" class="cardBtn" onclick="detailsAction(4)">
                             See Project
                         </button>
                     </div>
@@ -192,7 +192,7 @@
                             <li>JavaScript</li>
                             <li>HTML</li>
                         </ul>
-                        <button type="button" class="cardBtn" onclick="detailsAction()">
+                        <button type="button" class="cardBtn" onclick="detailsAction(5)">
                             See Project
                         </button>
                     </div>
@@ -298,11 +298,11 @@
         <section class="inner-details">
             <div class="detail-button-container"><img src="static/Disabled.svg" alt="close button" onclick="detailsAction()"></div>
             <div class="detail-img-container">
-                <img src="static/SnapshootPortfolio.png" alt="main project image">
+                <img id="det-img" src="static/SnapshootPortfolio.png" alt="main project image">
             </div>
             <div class="header-list-cont">
-                <h2 class="details-header">Keeping track of hundreds of components</h2>
-                <ul>
+                <h2 id="detailsHeader" class="details-header">Keeping track of hundreds of components</h2>
+                <ul id="det-list-cont">
                     <li>Codekit</li>
                     <li>GitHub</li>
                     <li>JavaScript</li>
@@ -312,11 +312,11 @@
                 </ul>
             </div>
             <div class="detail-btn-container">
-                <a class="detail-btn" href="#">See Live <img src="static/IconExport.svg" alt="see live button"></a>
-                <a class="detail-btn" href="#">See Source <img src="static/IconGitHub.png" alt="see source button"></a>
+                <a id="det-btn-live" class="detail-btn" href="sampleProject1.com">See Live <img src="static/IconExport.svg" alt="see live button"></a>
+                <a id="det-btn-source" class="detail-btn" href="sampleSource1.com">See Source <img src="static/IconGitHub.png" alt="see source button"></a>
             </div>
             <div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                <p id="det-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                 when an unknown printer took a galley of type and scrambled it 1960s with the 
                 releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
