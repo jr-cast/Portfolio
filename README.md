@@ -1,6 +1,6 @@
-# Portfolio: Introduction to JS objects 🛸!
+# Portfolio: Validate contact form 📜!
 
-In this new iteration the portfolio extra funtionalities were added to detail cards implementing js objects to store specific information
+In this new iteration of this project client side validation was applied to form using JavaScript
 
 Main objetives of this new project-feature is:
 

@@ -400,6 +400,10 @@ body main {
   text-align: center;
 }
 
+.errorMsg p {
+  color: red;
+}
+
 #aboutMe p {
   font-weight: 400;
   font-size: 1.25em;
@@ -644,6 +648,16 @@ form textarea:focus {
   line-height: 32px;
   padding-bottom: 150px;
   text-align: center;
+}
+
+.errorMsg {
+  background-color: rgba(255, 148, 148, 0.3);
+  border-radius: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s linear;
 }
 
 @media all and (max-width: 768px) {
@@ -1143,6 +1157,14 @@ form textarea:focus {
 
   #aboutMe button {
     margin-top: 24px;
+  }
+
+  .errorMsg {
+    background-color: rgba(255, 148, 148, 0.45);
+    border-radius: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 9em;
   }
 }
 
