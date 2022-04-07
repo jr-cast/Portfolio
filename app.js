@@ -190,7 +190,13 @@ function validForm() {
     if (emailInput === emailInput.toLowerCase()) {
       form.submit();
     } else {
-      alert('Check your email, all characters must be lowercased');
+      const error = document.createElement('div');
+      error.id = 'error';
+      error.className = 'errorMsg';
+      document.getElementById('myForm').appendChild(error);
+      const errorMessage = document.createElement('p');
+      errorMessage.innerHTML = 'Check your email, all characters must be lowercased';
+      document.getElementById('error').appendChild(errorMessage);
     }
   }
 }
