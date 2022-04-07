@@ -175,9 +175,7 @@ function validFormInputs(form) {
   const formIputs = form.querySelectorAll('[required]');
   // iterate over required form inputs
   for (let i = 0; i < formIputs.length; i += 1) {
-    if (formIputs[i].reportValidity()) {
-      continue;
-    } else {
+    if (!formIputs[i].reportValidity()) {
       isValid = false;
       break;
     }
@@ -192,7 +190,7 @@ function validForm() {
     if (emailInput === emailInput.toLowerCase()) {
       form.submit();
     } else {
-      alert('Check your email, all characters must be lowercased')
+      alert('Check your email, all characters must be lowercased');
     }
   }
 }
