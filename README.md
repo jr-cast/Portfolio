@@ -1,14 +1,16 @@
-# Portfolio: Validate contact form 📜!
+# Portfolio: Preserve Data in the Browser 💾!
 
-In this new iteration of this project client side validation was applied to form using JavaScript
+In this new iteration of this project local storage of user information was performed
 
 Main objetives of this new project-feature is:
 
 - DOM manipulation
 
-- Learn how to implement JS along side HTML and CSS to increase funtionality in websites
+- Use local storage to saver user input
 
 - Design, store and implement data from JS objects
+
+- Use JSON stringify() and JSON parse()
 
 - Update the README of your repository to include a link to the online version.
 
