@@ -169,5 +169,35 @@ for (let i = 0; i < projectsStore.length; i += 1) {
   document.getElementById(`cardFooter${i}`).appendChild(cardButton);
 }
 
+function validFormInputs(form) {
+  // set toggle flag
+  let isValid = true;
+  const formIputs = form.querySelectorAll('[required]');
+  // iterate over required form inputs
+  for (let i = 0; i < formIputs.length; i += 1) {
+    if (formIputs[i].reportValidity()) {
+      continue;
+    } else {
+      isValid = false;
+      break;
+    }
+  }
+  return isValid;
+}
+
+function validForm() {
+  const form = document.getElementById('myForm');
+  const emailInput = document.getElementById('myForm')[1].value;
+  if (validFormInputs(form)) {
+    if (emailInput === emailInput.toLowerCase()) {
+      form.submit();
+    } else {
+      alert('Check your email, all characters must be lowercased')
+    }
+  }
+}
+
+document.getElementById('submitButton').addEventListener('click', validForm);
+
 redirect();
 detailsAction();
