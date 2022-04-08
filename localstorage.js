@@ -1,9 +1,9 @@
 // localStorage
 //  item values to check and track
 let userData = {
-  userName: '',
-  userEmail: '',
-  userText: '',
+  UserName: '',
+  UserEmail: '',
+  UserText: '',
 };
 
 let strData = JSON.stringify(userData);
